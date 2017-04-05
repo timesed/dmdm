@@ -1,0 +1,25 @@
+﻿<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2//EN">
+<html>
+<head>
+<meta HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=utf-8">
+<title>datastudy</title>
+<script type="text/javascript" language="JavaScript">
+    function DoOnLoad()
+    {
+    }
+    function DoOnMainLoad()
+    {
+      var param = location.hash;
+      if (param.length != 0)
+        window.document.getElementById("right").src = param.substring(1);
+    }
+</script>
+</head>
+  <frameset cols="25%,*" framespacing="1">
+    <frame name="left" id="left" src="toc.html" frameborder="0">
+    <frame name="right" id="right" src="mnk_6_1.htm" frameborder="0" onload="DoOnLoad()">
+    <noframes>
+      Your browser does not handle frames! This feature is needed to view this WebHelp manual.
+    </noframes>
+  </frameset>
+</html>
